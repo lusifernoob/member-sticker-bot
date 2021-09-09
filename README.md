@@ -15,6 +15,20 @@ A telegram bot Which sends Thank You Sticker to Members in channel and Group at 
  
 1 Lakh (100k) Members
 
+## Deploy 
+
+<details>
+  <summary><b>Deploy on Heroku</b></summary>
+<br/>
+
+<p align="left">
+  <a href="https://heroku.com/deploy?template=https://github.com/lusifernoob/member-sticker-bot">
+     <img height="30px" src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku">
+  </a>
+</p>
+
+</details>
+
 # Credits
 [Pyrogram](https://pyrogram.org) <br>
 [Pyrogram Inn](https://t.me/pyrogramchat) <br>
