@@ -16,39 +16,38 @@ bughunter0 = Client(
     api_hash = os.environ["API_HASH"]
 )
 
-START_STRING_PRIVATE = """ Hi {}, I'm Member Sticker Bot. 
+START_STRING_PRIVATE = """ Hi {}, I'm Member Sticker Bot ｡◕‿◕｡. 
  I Can Send Relevant Thankyou Sticker in Groups and Channel
 \n All Member count doesn't return a sticker, so I will send a Thank you message for the count which have no sticker,
 This message will be deleted after 10 second. \n
-Nothing to Do here !! 😕
+Nothing to Do here (◕ᴗ◕✿)!! 🙂
 **ADD ME TO A GROUP THEN TRIGGER ME**
 """
 
 START_STRING_GROUP = """ **I need Admin rights to Send sticker in {}**
 
-`Join My Updates Channel for Getting more familiar with me`
+`Join My [Updates Channel](https://t.me/OMG_info) for Getting more familiar with me`
 
 """
 
 ABOUT = """
 ● **BOT:** `Member Sticker BOT` 
-● **AUTHOR :** [bughunter0](https://t.me/bughunter0) 
+● **AUTHOR :** [noob](https://t.me/shado_hackers) 
 ● **SERVER :** `Heroku` 
 ● **LIBRARY :** `Pyrogram` 
 ● **LANGUAGE :** `Python 3.9` 
-● **SOURCE :** [BugHunterBots](https://t.me/BugHunterBots/93) 
+● **SUPPORT :** [OMG INFO](https://t.me/OMG_info) 
 
 """
 HELP = """
 ● Still Wonder How I Work ? 
 ● Use /How get a Full Brief
-● Use /Donate to Donate
 """
 
 
 CHANNEL_BUTTON = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('↗ Join Here ↗', url='https://t.me/BughunterBots')
+        InlineKeyboardButton('↗ Join Here ↗', url='https://t.me/OMG_info')
         ]]
     )
 ADDME_BUTTON = InlineKeyboardMarkup(
@@ -62,7 +61,7 @@ START_BUTTON = InlineKeyboardMarkup(
         InlineKeyboardButton('HELP',callback_data='cbhelp')
         ],
         [
-        InlineKeyboardButton('↗ Join Here ↗', url='https://t.me/BughunterBots'),
+        InlineKeyboardButton('↗ Join Here ↗', url='https://t.me/OMG_info'),
         ],
         [InlineKeyboardButton('↗ ADD ME TO A GROUP ↗', url="t.me/member_sticker_bot?startgroup=true")
         ]]
@@ -476,7 +475,7 @@ async def sticker_group(bot, message):
            
             
    except Exception as error:
-            await message.reply("@admins , \nAs per Your Group Permission Members of This Group Can't send Stickers to this Chat (`I'm a Member, Not an Admin`) .\n**To Solve this Issue add me as Admin Or Give permission to send stickers in the Chat** \n\n\n ©@BugHunterBots")
+            await message.reply("@admins , \nAs per Your Group Permission Members of This Group Can't send Stickers to this Chat (`I'm a Member, Not an Admin`) .\n**To Solve this Issue add me as Admin Or Give permission to send stickers in the Chat** \n\n\n ©@OMG_info")
 
 
 @bughunter0.on_message(filters.channel & filters.command(["start"]))
